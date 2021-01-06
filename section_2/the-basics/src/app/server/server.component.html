@@ -1,1 +1,8 @@
-<p>The server component</p>
+<!-- String Interpolation could be any ts that returns a string. But must be a single line -->
+<!--  Anything that an be converted to a string will work too -->
+<p 
+    [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}"
+>
+    The server with ID {{ serverId }} is {{ getServerStatus() }}
+</p>
