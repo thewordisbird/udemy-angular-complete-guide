@@ -33,6 +33,9 @@ export class RecipeService{
       return this.recipes.slice(); // Passes the array by value, not by refrence
   }
 
+  getRecipe(id:number): Recipe {
+      return this.recipes[id];
+  }
   addIngredientsToShoppingList(ingredients: Ingredient[]){
     this.shoppingListService.addIngredients(ingredients)
   }
