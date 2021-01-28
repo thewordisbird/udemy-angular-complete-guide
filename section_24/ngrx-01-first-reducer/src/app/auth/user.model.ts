@@ -7,6 +7,7 @@ export class User {
   ) {}
 
   get token() {
+    console.log('in user token getter')
     if (!this._tokenExpirationDate || new Date() > this._tokenExpirationDate) {
       return null;
     }
