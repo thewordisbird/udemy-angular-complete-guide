@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fire-testing-fb143": {
+      "hosting": {
+        "angular-config": [
+          "fire-testing-fb143"
+        ]
+      }
+    }
+  }
+}
